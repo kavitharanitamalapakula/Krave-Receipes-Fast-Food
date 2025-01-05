@@ -42,7 +42,7 @@
             color: white;
             padding: 20px;
             background-color: black;
-            /* margin-bottom: 100px; */
+            margin-bottom: 50px;
         }
 
         .nav1 {
@@ -104,8 +104,164 @@
         #order-online>a {
             text-decoration: none;
             color: white;
-            /* font-weight: 400; */
             font-family: "Open Sans", sans-serif;
+        }
+
+        .hidden {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: -100%;
+            left: 21%;
+            width: 850px;
+            padding: 10px;
+            height: 0;
+            overflow: hidden;
+            transition: 0.4s ease;
+            background-color: rgba(53, 32, 32, 0.458);
+        }
+
+        .checkbox-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .checkbox-1>a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .checkbox-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .checkbox-2>a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px;
+            font-weight: 400;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        #order-online {
+            color: white;
+            font-size: 1rem;
+            background-color: #e69c00;
+            width: 30%;
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        #order-online>a {
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        #checkbox {
+            display: none;
+        }
+
+        /* responsive */
+        @media screen and (max-width : 576px) {
+
+            .nav2,
+            .nav1 {
+                display: none;
+            }
+
+            label,
+            .bi-list {
+                display: flex;
+            }
+
+            #checkbox:checked+.hidden {
+                display: flex;
+                top: 15%;
+                height: fit-content;
+            }
+
+            .hidden {
+                left: 11.5%;
+                width: 77%;
+            }
+
+            .checkbox-1>a {
+                font-size: 1rem;
+                padding: 8px;
+                font-family: "Open Sans", sans-serif;
+
+            }
+        }
+
+        @media screen and (min-width : 577px) and (max-width : 768px) {
+
+            .nav2,
+            .nav1 {
+                display: none;
+            }
+
+            label,
+            .bi-list {
+                display: flex;
+            }
+
+            #checkbox:checked+.hidden {
+                display: flex;
+                top: 15%;
+                height: fit-content;
+            }
+
+            .hidden {
+                left: 11.5%;
+                width: 77%;
+            }
+
+            .checkbox-1>a {
+                font-size: 1rem;
+                padding: 8px;
+                font-family: "Open Sans", sans-serif;
+            }
+            .form-container{
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (min-width : 769px) and (max-width : 992px) {
+            .name>a {
+                font-size: 1.9rem;
+            }
+
+            .nav1>a {
+                font-size: 1rem;
+            }
+
+            #order1 {
+                font-size: 1rem;
+                padding: 10px;
+            }
+
+            .footer-content1 {
+                line-height: 1.5;
+            }
+        }
+
+        @media screen and (min-width : 993px) {
+            .footer-content1 {
+                line-height: 1;
+            }
+
         }
     </style>
 </head>
@@ -283,9 +439,9 @@
             </div>
 
         </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

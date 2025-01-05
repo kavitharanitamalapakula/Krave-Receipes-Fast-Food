@@ -1,9 +1,5 @@
 .back-ground-image-1 {
     background-image: url("https://t4.ftcdn.net/jpg/01/41/16/55/240_F_141165557_octtJ7jKn0onrIDrXntaweAyCZk6M3z1.jpg");
-    /* background-image: url("https://image.slidesdocs.com/responsive-images/background/burger-ketchup-fast-food-vegetables-powerpoint-background_355bd876c8__960_540.jpg") ; */
-    /* background-image: url("https://static.vecteezy.com/system/resources/previews/023/010/419/non_2x/the-delicious-burger-in-the-black-background-with-ai-generated-free-photo.jpg"); */
-    /* background-image: url("https://img.freepik.com/free-photo/delicious-realistic-burger_23-2150902338.jpg?t=st=1735455359~exp=1735458959~hmac=b50ed79c8afd3a514517f11f63dc96e68ee4960dc46302814a3dfada6f090802&w=1380"); */
-    /* background-image: url("https://img.freepik.com/free-photo/close-up-delicious-burger-meal_23-2151434076.jpg?t=st=1735455470~exp=1735459070~hmac=1b29fc14dd71a0be0cb1d14930adfb86f1ba346d56f901b4c760ae19d1f23acd&w=996"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,14 +8,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px;
+    position: relative;
 }
 
-.bi-list,
-#checkbox,
-.hidden {
+.bi-list {
     display: none;
     font-size: 2.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+#checkbox {
+    display: none;
 }
 
 .name>a {
@@ -39,10 +39,13 @@
     color: white;
     padding: 20px;
     background-color: rgba(237, 230, 230, 0.073);
+    position: relative;
+    z-index: 100;
 }
 
 .nav1 {
     display: flex;
+    gap: 20px;
 }
 
 .nav1>a:hover {
@@ -54,6 +57,7 @@
     color: white;
     font-size: 1rem;
     padding: 10px;
+    transition: color 0.3s ease;
 }
 
 .nav2 {
@@ -72,12 +76,10 @@
 #order1 {
     color: white;
     font-size: 1rem;
-    background-color: #ffbe33;
-    ;
+    background-color: #e69c00;
     padding: 10px;
     border-radius: 20px;
     text-align: center;
-
 }
 
 #order1>a {
@@ -86,7 +88,6 @@
     font-weight: 400;
     padding: 10px;
     font-family: "Open Sans", sans-serif;
-
 }
 
 #order-online {
@@ -159,6 +160,7 @@
     padding: 10px;
     border-radius: 20px;
     text-align: center;
+    cursor: pointer;
 }
 
 #order2>a {
@@ -167,17 +169,19 @@
 }
 
 .hidden {
-    display: none;
-    flex-direction: column;
     position: absolute;
-    top: -100%;
-    left: 21%;
-    width: 850px;
-    padding: 10px;
-    height: 0;
-    overflow: hidden;
-    transition: 0.4s ease;
-    background-color: rgba(255, 255, 255, 0.089);
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    background: rgb(25, 35, 39);
+    background: linear-gradient(90deg, rgba(25, 35, 39, 0.7092086834733893) 0%, rgba(66, 91, 133, 0.6755952380952381) 50%, rgba(21, 17, 67, 0.7344187675070029) 100%);
+    /* background-image: linear-gradient(to bottom right, red, yellow); */
+    /* background-color: rgba(77, 104, 239, 0.95); */
+    z-index: 99;
+    transition: all 0.4s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
 }
 
 .checkbox-1 {
@@ -246,27 +250,27 @@
     animation-delay: 5s;
 }
 
-/* @keyframes moveAcrossScreen {
+@keyframes moveAcrossScreen {
 
     0%,
     20% {
-
-        transform: translateX(300%);
+        transform: translateX(0%);
     }
 
     40%,
     60% {
-        transform: translateX(0%);
+        transform: translateX(-100%);
     }
 
     80%,
     100% {
-        transform: translateX(-100%);
-        
+        transform: translateX(100%);
+
 
     }
 
-} */
+}
+
 .logo {
     background-image: url("https://as1.ftcdn.net/v2/jpg/04/86/44/90/1000_F_486449051_8ViosQhQRHWesy56hoCNOpxRDHJErrjW.jpg");
     background-position: center;

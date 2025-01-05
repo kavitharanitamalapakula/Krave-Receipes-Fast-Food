@@ -55,6 +55,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     border: 5px solid #ffbe33;
+    transition: all 0.4s ease;
 }
 
 .bg-2 {
@@ -66,6 +67,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     border: 5px solid #ffbe33;
+    transition: all 0.4s ease;
 }
 .offers-containers{
     display: flex;
@@ -99,6 +101,7 @@
 
 .Thursday-offer:hover >.bg-1{
     background-size: 110%;
+    
 }
 .pizza-offer:hover >.bg-2{
     background-size: 110%;
