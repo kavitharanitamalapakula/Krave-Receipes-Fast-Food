@@ -1,0 +1,119 @@
+.feedback-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px;
+    gap: 15px;
+}
+
+.text {
+    font-size: 1.5rem;
+}
+
+.text>h2 {
+    margin-bottom: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.feedback-1,
+.feedback-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.girl-feedback,
+.boy-feedback {
+    line-height: 1.5;
+    color: white;
+    background-color: #222831;
+    font-family: "Open Sans", sans-serif;
+    width: 80%;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding: 20px;
+}
+
+/* 
+.girl-image,
+.boy-image {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    border: 5px solid #ffbe33;
+    align-self: flex-start;
+    background-image: url("https://themewagon.github.io/feane/images/client2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.girl-image>img,
+.boy-image>img {
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+} */
+.girl-image {
+    background-image: url("https://themewagon.github.io/feane/images/client1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 120px;
+    border-radius: 50%;
+    align-self: flex-start;
+    border: 5px solid #ffbe33;
+    position: relative;
+}
+
+.indicator {
+    width: 20px;
+    height: 20px;
+    background-color: #ffbe33;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -10%;
+    left: 45%;
+    z-index: -1;
+}
+
+.boy-image {
+    background-image: url("https://themewagon.github.io/feane/images/client2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 120px;
+    border-radius: 50%;
+    align-self: flex-start;
+    border: 5px solid #ffbe33;
+    position: relative;
+}
+

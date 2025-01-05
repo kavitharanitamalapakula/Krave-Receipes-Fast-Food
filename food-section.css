@@ -1,0 +1,186 @@
+.food-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-section>h2 {
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+}
+
+.filter-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 5%;
+}
+
+#View-more {
+    margin-bottom: 10%;
+    width: 15%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #ffc107;
+}
+
+#View-more>a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.card-1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.card-2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.card-3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.card-4 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.card-5 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.card-6 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.card-7 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.card-8 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.card-9 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.buttons {
+    width: 50%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons>button {
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    width: 12%;
+    border-radius: 25px;
+    border: none;
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.buttons>[type="menu"] {
+    background-color: #222831;
+    color: #fff;
+}
+
+.card {
+    width: 350px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+    height: 50%;
+    border-bottom-left-radius: 25px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.card-content {
+    padding: 15px;
+    background-color: #1c1e26;
+    color: #fff;
+    height: 100%;
+
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.card-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.card-footer span {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.cart-button {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.cart-button .bi-cart-fill {
+    font-size: 18px;
+}
+
+.cart-button:hover {
+    background-color: #e0a800;
+}
+
+.buttons>button:checked {
+    background-color: #222831;
+    color: #fff;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}

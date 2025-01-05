@@ -1,0 +1,76 @@
+.book-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.form-container {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+}
+
+.form {
+    flex: 1;    
+}
+
+.book-table h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    text-align: start;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.form input,
+.form select,
+.form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form button {
+    background-color: #FFC107;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #E0A800;
+}
+
+.map {
+    flex: 1;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #6c757d;
+    text-align: center;
+}
+
+.map {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

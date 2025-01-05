@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.back-ground-image-1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.offers-containers {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.food-section{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.back-ground-image-2 {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.book-table {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.feedback-section {
+    grid-area: 6 / 1 / 7 / 2;
+}
+
+footer {
+    grid-area: 7 / 1 / 8 / 2;
+}
+
+.form-label{
+    display: block !important;
+}
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f8ff;
+    margin: 0;
+    overflow: hidden;
+} */
+
+.success-animation {
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.checkmarks {
+    font-size: 80px;
+    color: white;
+    animation: scaleUp 0.5s ease-out;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.confetti {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background-color: red;
+    opacity: 0.8;
+    border-radius: 2px;
+    animation: fall 3s linear infinite, spin 3s linear infinite;
+}
+
+.confetti:nth-child(2) {
+    background-color: blue;
+    left: 30%;
+    animation-delay: 0.2s;
+}
+
+.confetti:nth-child(3) {
+    background-color: green;
+    left: 50%;
+    animation-delay: 0.4s;
+}
+
+.confetti:nth-child(4) {
+    background-color: yellow;
+    left: 70%;
+    animation-delay: 0.6s;
+}
+
+.confetti:nth-child(5) {
+    background-color: purple;
+    left: 90%;
+    animation-delay: 0.8s;
+}
+
+.confetti:nth-child(6) {
+    background-color: orange;
+    left: 20%;
+    animation-delay: 1s;
+}
+
+.confetti:nth-child(7) {
+    background-color: pink;
+    left: 40%;
+    animation-delay: 1.2s;
+}
+
+.confetti:nth-child(8) {
+    background-color: cyan;
+    left: 60%;
+    animation-delay: 1.4s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(100%);
+        
+    }
+
+    100% {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+}

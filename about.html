@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krave Recipes Food Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./burger-image.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        label,
+        .bi-list,
+        #checkbox,
+        .hidden {
+            display: none;
+            font-size: 2.5rem;
+        }
+
+        .name>a {
+            font-size: 35px;
+            color: white;
+            font-family: 'Dancing Script', cursive;
+            text-decoration: none;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.5rem;
+            width: 100%;
+            color: white;
+            padding: 20px;
+            background-color: black;
+            /* margin-bottom: 100px; */
+        }
+
+        .nav1 {
+            display: flex;
+        }
+
+        .nav1>a:hover {
+            color: #e69c00;
+        }
+
+        .nav1>a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px;
+        }
+
+        .nav2 {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav2>a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px;
+        }
+
+        #order1 {
+            color: white;
+            font-size: 1.2rem;
+            background-color: #e69c00;
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+
+        }
+
+        #order1>a {
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            padding: 10px;
+            font-family: "Open Sans", sans-serif;
+
+        }
+
+        #order-online {
+            color: white;
+            font-size: 1rem;
+            background-color: #e69c00;
+            width: 30%;
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        #order-online>a {
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        /* responsive */
+        @media screen and (max-width : 576px) {
+
+            .nav2,
+            .nav1 {
+                display: none;
+            }
+
+            label,
+            .bi-list {
+                display: flex;
+            }
+
+            #checkbox:checked+.hidden {
+                display: flex;
+                top: 15%;
+                left: 11.5%;
+                height: fit-content;
+            }
+
+            .hidden {
+                left: 11.5%;
+                width: 77%;
+            }
+
+            .checkbox-1>a {
+                font-size: 1rem;
+                padding: 8px;
+                font-family: "Open Sans", sans-serif;
+
+            }
+
+        }
+
+        @media screen and (min-width : 577px) and (max-width : 768px) {
+
+            .nav2,
+            .nav1 {
+                display: none;
+            }
+
+            label,
+            .bi-list {
+                display: flex;
+            }
+
+            #checkbox:checked+.hidden {
+                display: flex;
+                top: 15%;
+                height: fit-content;
+            }
+
+            .hidden {
+                left: 11.5%;
+                width: 77%;
+            }
+
+            .checkbox-1>a {
+                font-size: 1rem;
+                padding: 8px;
+                font-family: "Open Sans", sans-serif;
+
+            }
+
+        }
+
+        @media screen and (min-width : 769px) and (max-width : 992px) {
+            .header {
+                width: 100%;
+            }
+
+            .nav1>a {
+                font-size: 1rem;
+                padding: 5px;
+            }
+
+            #order1 {
+                font-size: 1rem;
+                padding: 10px;
+                border-radius: 20px;
+                text-align: center;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="name"><a href="./index.html">Krave Recipes</a></nav>
+        <nav class="nav1">
+            <a href="./index.html">HOME</a>
+            <a href="./menu.html">MENU</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./book.html">BOOK TABLE</a>
+        </nav>
+        <nav class="nav2">
+            <a href="">
+                <i class="bi bi-person-fill"></i>
+            </a>
+            <a href="">
+                <i class="bi bi-cart-fill"></i>
+            </a>
+            <a href="">
+                <i class="bi bi-search"></i>
+            </a>
+            <div id="order1">
+                <a href="#">Order Online</a>
+            </div>
+        </nav>
+        <!-- Hambar start -->
+        <label for="checkbox"><i class="bi bi-list"></i></label>
+        <input type="checkbox" id="checkbox">
+        <div class="hidden">
+            <nav class="checkbox-1">
+                <a href="./index.html">HOME</a>
+                <a href="./menu.html">MENU</a>
+                <a href="./about.html">ABOUT</a>
+                <a href="./book.html">BOOK TABLE</a>
+            </nav>
+            <nav class="checkbox-2">
+                <a href="">
+                    <i class="bi bi-person-fill"></i>
+                </a>
+                <a href="">
+                    <i class="bi bi-cart-fill"></i>
+                </a>
+                <a href="">
+                    <i class="bi bi-search"></i>
+                </a>
+                <div id="order-online">
+                    <a href="#">Order Online</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Hambar start -->
+    </header>
+    <div class="back-ground-image-2">
+        <div class="burger-container">
+            <div class="burger-image">
+                <img src="./vecteezy_a-hamburger-with-cheese-lettuce-and-tomatoes_53649990.png"
+                    alt="Burger Illustration">
+            </div>
+            <div class="content-2">
+                <h1>We Are Krave Recipes</h1>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered alteration in some form, by injected humour, or randomised words which don't
+                    look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
+                    need to be sure there isn't anything embarrassing hidden in the middle of text.
+                </p>
+                <a href="#" class="buttons-2">Read More</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-1">
+                <h2>Contact Us</h2>
+                <a href=""><i class="bi bi-geo-alt-fill"></i>Location</a>
+                <a href=""><i class="bi bi-telephone"></i>Call +01 123456789</a>
+                <a href=""><i class="bi bi-envelope-fill"></i>demo@gmail.com</a>
+            </div>
+            <div class="footer-2">
+                <h2><a href="">Krave Recipes</a></h2>
+                <p>
+                    Necessary, making this the first true generator on the Internet. It uses a dictionary of over
+                    200 Latin words, combined with
+                </p>
+                <span>
+                    <div class="facebook"><i class="bi bi-facebook"></i></div>
+                    <div class="twitter"><i class="bi bi-twitter"></i></div>
+                    <div class="linkedin"><i class="bi bi-linkedin"></i></div>
+                    <div class="insta"><i class="bi bi-instagram"></i></div>
+                    <div class="pinterest"><i class="bi bi-pinterest"></i></div>
+                </span>
+            </div>
+            <div class="footer-3">
+                <h2>Opening Hours</h2>
+                <p>Everyday</p>
+                <p>10.00 Am -10.00 Pm</p>
+            </div>
+        </div>
+        <div class="footer-content1">
+            <p>© 2024 All Rights Reserved By Free Html Templates</p>
+            <p>© Distributed By ThemeWagon</p>
+        </div>
+    </footer>
+</body>
+
+</html>

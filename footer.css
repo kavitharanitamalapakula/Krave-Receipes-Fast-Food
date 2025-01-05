@@ -1,0 +1,108 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222831;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.footer-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    width: 50%;
+}
+
+.footer-1>h2 {
+    color: rgb(246, 241, 241);
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+.footer-1>a {
+    text-decoration: none;
+    color: rgb(234, 228, 228);
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer-2,
+.footer-3 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.footer-2>*,
+.footer-3>* {
+    line-height: 1.5;
+    color: white;
+}
+
+.footer-2>h2>a {
+    text-decoration: none;
+    color: rgb(246, 241, 241);
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.footer-2>span {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-2>p,
+.footer-2>span {
+    color: rgb(234, 228, 228);
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer-3>h2 {
+    color: rgb(246, 241, 241);
+    font-size: 2rem;
+    padding-top: 0px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.footer-3>p {
+    font-size: 1rem;
+    color: rgb(234, 228, 228);
+}
+
+.footer-content1 {
+    color: rgb(234, 228, 228);
+    font-family: "Open Sans", sans-serif;
+    line-height: 3;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 2%;
+}
+
+.bi-facebook,
+.bi-twitter,
+.bi-linkedin,
+.bi-instagram,
+.bi-pinterest {
+    font-size: 1.4rem;
+}
+.footer-2>span>div>i:hover{
+    color: #ffbe33;;
+}

@@ -1,0 +1,60 @@
+.back-ground-image-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 730px;
+    background-color: #222831;
+}
+
+.burger-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.burger-image {
+    flex: 0.6;
+}
+
+.burger-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content-2 {
+    flex: 0.7;
+}
+
+.content-2 h1 {
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+.content-2 p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #cfcfcf;
+    margin-bottom: 20px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+.content-2 .buttons-2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffb100;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    width: 35%;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.content-2 .buttons-2:hover {
+    background-color: #e09e00;
+}
