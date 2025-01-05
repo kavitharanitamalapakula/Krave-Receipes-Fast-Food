@@ -1,5 +1,5 @@
 .back-ground-image-1 {
-    background-image: url("https://img.freepik.com/free-photo/darkroom-concrete-floor-with-foggy-effect-stage-background-product_84443-7819.jpg");
+    background-image: url("https://t4.ftcdn.net/jpg/01/41/16/55/240_F_141165557_octtJ7jKn0onrIDrXntaweAyCZk6M3z1.jpg");
     /* background-image: url("https://image.slidesdocs.com/responsive-images/background/burger-ketchup-fast-food-vegetables-powerpoint-background_355bd876c8__960_540.jpg") ; */
     /* background-image: url("https://static.vecteezy.com/system/resources/previews/023/010/419/non_2x/the-delicious-burger-in-the-black-background-with-ai-generated-free-photo.jpg"); */
     /* background-image: url("https://img.freepik.com/free-photo/delicious-realistic-burger_23-2150902338.jpg?t=st=1735455359~exp=1735458959~hmac=b50ed79c8afd3a514517f11f63dc96e68ee4960dc46302814a3dfada6f090802&w=1380"); */
@@ -128,6 +128,7 @@
 }
 
 .transparent {
+    display: none;
     position: absolute;
     right: 5%;
     top: 18%;

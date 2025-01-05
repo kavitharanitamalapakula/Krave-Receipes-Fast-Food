@@ -431,10 +431,6 @@
         display: none;
     }
 
-    #order2 {
-        width: 40%;
-    }
-
     .nav1,
     .nav2 {
         display: none;
@@ -464,7 +460,7 @@
     }
 
     .carousel>h1 {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
 
     .back-ground-content {
@@ -481,14 +477,16 @@
     .offers {
         flex-direction: column;
         align-content: center;
+        width: 90%;
+        padding: 10px;
     }
 
     .Thursday-offer {
-        width: 80%;
+        width: 95%;
     }
 
     .pizza-offer {
-        width: 80%;
+        width: 95%;
     }
 
     .card {
@@ -497,12 +495,21 @@
     }
 
     .buttons {
-        width: 95%;
+        width: 100%;
     }
 
     .content-2 .buttons-2 {
         font-size: 1.1rem;
         padding: 10px 10px;
+        width: 50%;
+    }
+
+    .content-1 {
+        width: 50%;
+    }
+
+    .buttons>button {
+        width: 16%;
     }
 
     .filter-menu {
@@ -557,8 +564,7 @@
     }
 
     #order {
-        padding: 10px;
-        gap: 10px;
+        padding: 8px;
         border-radius: 15px;
     }
 
@@ -615,18 +621,17 @@
     }
 
     .girl-image {
-        width: 35%;
+        width: 40%;
         height: 120px;
         position: relative;
     }
-
     .indicator {
         width: 20px;
         height: 20px;
     }
 
     .boy-image {
-        width: 35%;
+        width: 40%;
         height: 120px;
     }
 
@@ -634,8 +639,36 @@
         transform: scale(1.05);
     }
 
+    #order2 {
+        width: 50%;
+    }
+
     .book-table {
         width: 95%;
         margin: 0 auto;
+    }
+
+    .feedback-container {
+        width: 90%;
+    }
+
+    .footer-1,
+    .footer-2,
+    .footer-3 {
+        width: 90%;
+    }
+
+    .footer-content1 {
+        line-height: 2;
+    }
+
+    .footer-2,
+    .footer-3 {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-3>p {
+        margin: 0px;
     }
 }
