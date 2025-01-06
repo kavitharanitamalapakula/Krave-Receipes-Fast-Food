@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    min-height: 80vh;
+    /* min-height: 80vh; */
 }
 
 .feedback-container {
@@ -116,4 +116,3 @@
     border: 5px solid #ffbe33;
     position: relative;
 }
-
