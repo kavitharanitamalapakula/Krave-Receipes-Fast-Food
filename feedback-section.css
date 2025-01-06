@@ -58,28 +58,6 @@
     padding: 20px;
 }
 
-/* 
-.girl-image,
-.boy-image {
-    width: 20%;
-    height: 20%;
-    border-radius: 50%;
-    border: 5px solid #ffbe33;
-    align-self: flex-start;
-    background-image: url("https://themewagon.github.io/feane/images/client2.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.girl-image>img,
-.boy-image>img {
-
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-} */
 .girl-image {
     background-image: url("https://themewagon.github.io/feane/images/client1.jpg");
     background-position: center;
